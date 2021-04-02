@@ -25,7 +25,11 @@ import {
     Tooltip,
     Pagination,
     Dialog,
-    MessageBox
+    MessageBox,
+    Tag,
+    Tree,
+    Select,
+    Option
 } from 'element-ui'
 
 Vue.use(Button)
@@ -55,3 +59,7 @@ Vue.use(Pagination)
 Vue.use(Dialog)
     //将 confirm添加到原型对象中，vue组件中可以通过this获取confirm
 Vue.prototype.$confirm = MessageBox.confirm
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
