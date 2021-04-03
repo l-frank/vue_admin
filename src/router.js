@@ -43,6 +43,11 @@ const router = new Router({
                         component: () =>
                             import ('views/power/Roles.vue')
 
+                    }, {
+                        path: '/categories',
+                        component: () =>
+                            import ('views/goods/Cate.vue')
+
                     }
 
                 ]
