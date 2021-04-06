@@ -218,6 +218,7 @@ export default {
     },
     //为角色分配权限
     async allotRights () {
+
       const keys = [
         ...this.$refs.treeRef.getCheckedKeys(),
         ...this.$refs.treeRef.getHalfCheckedKeys()
@@ -233,7 +234,9 @@ export default {
         this.$message.error('分配权限失败！')
       } else {
         this.$message.success('分配权限成功！')
+
         this.getRolesList()
+
         this.setRightDialogVisible = false
       }
 
