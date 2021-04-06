@@ -60,6 +60,11 @@ const router = new Router({
                         path: '/goods/add',
                         component: () =>
                             import ('views/goods/Add.vue')
+                    }, {
+                        path: '/orders',
+                        component: () => {
+                            return import ('views/order/Order.vue')
+                        }
                     }
 
                 ]
