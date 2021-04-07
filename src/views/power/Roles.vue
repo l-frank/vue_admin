@@ -229,13 +229,13 @@ export default {
         `roles/${this.roleId}/rights`,
         { rids: idStr }
       )
-
+      console.log(res);
       if (res.meta.status !== 200) {
         this.$message.error('分配权限失败！')
       } else {
         this.$message.success('分配权限成功！')
 
-        this.getRolesList()
+        this.getRoleList();
 
         this.setRightDialogVisible = false
       }
